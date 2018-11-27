@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  color: #fff;
+  font-size: 45px;
+  padding: 20px 0;
+  margin: 0; }
+  @media (max-width: 640px) {
+    h1 {
+      text-align: center;
+      font-size: 42px; } }
+
+.container-fluid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+header {
+  background-color: #3a3b69;
+  padding: 0 5px; }
+  header p {
+    display: block; }
+
+.search__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 570px) {
+    .search__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+.search__input {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  padding: 0 10px;
+  line-height: 20px;
+  height: 50px;
+  outline: 0; }
+  .search__input::-webkit-input-placeholder {
+    opacity: 0.3;
+    text-transform: uppercase; }
+  .search__input:-ms-input-placeholder {
+    opacity: 0.3;
+    text-transform: uppercase; }
+  .search__input::-ms-input-placeholder {
+    opacity: 0.3;
+    text-transform: uppercase; }
+  .search__input::placeholder {
+    opacity: 0.3;
+    text-transform: uppercase; }
+.search__btn {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 5px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: 2px solid #fff;
+  cursor: pointer; }
+  .search__btn:hover {
+    color: #ffff4c;
+    border-color: #ffff4c; }
+  @media (max-width: 570px) {
+    .search__btn {
+      width: 50%;
+      margin: 20px auto 0; } }
+
+.filter {
+  padding: 30px 0; }
+  .filter__switch {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+    .filter__switch .switch label {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 5px 10px;
+      color: #fff;
+      background-color: transparent;
+      cursor: pointer; }
+      .filter__switch .switch label:hover {
+        color: #ffff4c;
+        border-color: #ffff4c; }
+
+.wrapper .block__item {
+  border-bottom: 1px solid #000; }
+  .wrapper .block__item:hover {
+    background-color: #E6E6FA;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+.wrapper__item {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .wrapper__item .item {
+    min-width: 25%;
+    text-align: center;
+    letter-spacing: 3px; }
+  .wrapper__item .time {
+    color: #3a3b69;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 400; }
+  .wrapper__item .flight {
+    font-size: 15px; }
+  .wrapper__item .city, .wrapper__item .status {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize; }
+
+.search input::-webkit-input-placeholder {
+  color: #929292; }
+
+.search input::-moz-placeholder {
+  color: #929292; }
+
+.search input:-moz-placeholder {
+  color: #929292; }
+
+.search input:-ms-input-placeholder {
+  color: #929292; }
+
+/*# sourceMappingURL=style.css.map */
