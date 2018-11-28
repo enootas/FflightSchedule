@@ -115,7 +115,7 @@ header {
       .filter__switch {
         -ms-flex-pack: distribute;
             justify-content: space-around; } }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       .filter__switch {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
