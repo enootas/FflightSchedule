@@ -7,17 +7,25 @@ $yellow: #ffff4c;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 h1 {
   color: $white;
   font-size: 45px;
   padding: 20px 0;
   margin: 0;
-  @media (max-width: 640px) {
-    text-align: center;
+  @media (max-width: 1000px) {
     font-size: 42px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 35px;
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    font-size: 30px;
   }
 }
 .container-fluid {
@@ -80,13 +88,26 @@ header {
 
 .filter {
   padding: 30px 0;
+  @media (max-width: 500px) {
+    padding: 15px 0;
+  }
   &__switch {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    @media (max-width: 1000px) {
+      justify-content: space-around;
+    }
+    @media (max-width: 450px) {
+      flex-direction: column;
+      margin-left: 25px;
+    }
     .switch {
+      @media (max-width: 450px) {
+        margin: 10px 0;
+      }
       label {
         font-size: 24px;
         font-weight: 700;
@@ -94,6 +115,9 @@ header {
         color: $white;
         background-color: transparent;
         cursor: pointer;
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
         &:hover {
           color: $yellow;
           border-color: $yellow;
@@ -103,40 +127,61 @@ header {
   }
 }
 
-.wrapper {
-  .block__item {
-    border-bottom: 1px solid #000;
-    &:hover {
-      background-color: #E6E6FA;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-  }
-
-  &__item {
-    padding: 15px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .item {
-      min-width: 25%;
-      text-align: center;
-      letter-spacing: 3px;
-    }
-    .time {
-      color: $blue;
-      font-size: 25px;
-      margin-bottom: 10px;
-      font-weight: 400;
-    }
-    .flight {
-      font-size: 15px;
-
-    }
-    .city, .status {
-      font-size: 20px;
-      font-weight: 400;
-      text-transform: capitalize;
+#wrapper {
+  .wrapper {
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &:hover {
+        background-color: #E6E6FA;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+      .item {
+        padding: 15px 0;
+        min-width: 25%;
+        text-align: center;
+        letter-spacing: 3px;
+        @media (max-width: 750px) {
+          letter-spacing: 0;
+          line-height: 30px;
+        }
+      }
+      .time {
+        color: $blue;
+        font-size: 25px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        @media (max-width: 600px) {
+          margin-bottom: 0;
+          font-size: 22px;
+        }
+        @media (max-width: 400px) {
+          font-size: 18px;
+        }
+      }
+      .flight {
+        display: block;
+        font-size: 15px;
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
+        @media (max-width: 400px) {
+          font-size: 9px;
+        }
+      }
+      .city, .status {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: capitalize;
+        @media (max-width: 600px) {
+          font-size: 17px;
+        }
+        @media (max-width: 400px) {
+          font-size: 14px;
+        }
+      }
     }
   }
 }

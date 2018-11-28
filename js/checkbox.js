@@ -1,4 +1,3 @@
-$('.flight-up').css("display","block");
 $('#check-up').click(function(){
     if ($(this).is(':checked')){
         $('.flight-up').show(100);
@@ -7,7 +6,6 @@ $('#check-up').click(function(){
     }
 });
 
-$('.flight-in').css("display","block");
 $('#check-in').click(function(){
     if ($(this).is(':checked')){
         $('.flight-in').show(100);
@@ -16,7 +14,6 @@ $('#check-in').click(function(){
     }
 });
 
-$('.flight-delay').css("display","block");
 $('#check-delay').click(function(){
     if ($(this).is(':checked')){
         $('.flight-delay').show(100);
